@@ -11,7 +11,12 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 
-This package installation will perform multiple actions. Not only it will setup Jenkins as a daemon launched on start, but it will create a Jenkins user to run this service. Furthermore, the console log will direct its output to the /var/log/jenkins/jenkins.log file, which is useful to check while troubleshooting. Next, the installation will make sure /etc/default/jenkins gets populated with configuration parameters for the program's launch (such as JENKINS_HOME). Then the last but not least, Jenkins will be set to function on port 8080, which must be accessed through the browser to start configuration.
+This package installation will perform multiple actions: 
+- It will setup Jenkins as a daemon launched on start
+- It will create a Jenkins user to run this service 
+- The console log will direct its output to the /var/log/jenkins/jenkins.log file, which is useful to check while troubleshooting
+- It will make sure /etc/default/jenkins gets populated with configuration parameters for the program's launch (such as JENKINS_HOME) 
+- Jenkins will be set to function on port 8080, which must be accessed through the browser to start configuration
 
 **Step 2** - Install Java. Update the repositories by running:
 
